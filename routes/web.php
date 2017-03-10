@@ -12,5 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    var_dump(config('jwt.ttl'));
+    var_dump(env('DB_CONNECTION'));
+    // return view('welcome');
 });
